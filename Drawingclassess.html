@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SDGVB2025 — Drawing Classes</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/css/styles.css" rel="stylesheet" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">SDGVB2025</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="siteNav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="artforms.html">Artforms</a></li>
+          <li class="nav-item"><a class="nav-link" href="drawing-classes.html">Drawing Classes</a></li>
+          <li class="nav-item"><a class="nav-link" href="manual.html">Manual</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-5">
+    <h1>Drawing Classes</h1>
+    <p>Provide details about drawing classes: levels (beginner/intermediate/advanced), schedule, fees, and instructor bios.</p>
+
+    <h2>Schedule</h2>
+    <p>List class times and enrollment links or instructions.</p>
+
+    <h2>Instructors</h2>
+    <p>Short bios of instructors and sample works (images or links).</p>
+  </main>
+
+  <footer class="bg-light py-3 mt-auto">
+    <div class="container text-center">
+      <small class="text-muted">© SDGVB2025 — 2025</small>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    (function () {
+      const links = document.querySelectorAll('#siteNav a.nav-link');
+      const current = location.pathname.split('/').pop() || 'index.html';
+      links.forEach(a => {
+        if (a.getAttribute('href') === current) a.classList.add('active');
+      });
+    })();
+  </script>
+</body>
+</html>
