@@ -1,1 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Art Forms — Team Vriddhi</title>
+  <meta name="description" content="Explore India's rich art forms — dance, music, crafts, theatre, mandala art and more. A learning resource by Team Vriddhi, NPS Jayanagar." />
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;color:#0b1220;margin:0;line-height:1.55;background:#fbfcfe}
+    .container{max-width:1000px;margin:32px auto;padding:0 16px}
+    header.hero{padding:28px 0;border-bottom:1px solid #e6e9ee}
+    .hero h1{margin:.2rem 0;font-size:1.9rem}
+    .hero p{margin:0;color:#334155}
+    .grid{display:grid;gap:20px}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+    .card{background:#fff;padding:16px;border-radius:8px;border:1px solid #eef2f7}
+    .card h3{margin-top:0}
+    .media{display:flex;gap:12px;align-items:flex-start}
+    .media img{width:140px;height:100px;object-fit:cover;border-radius:6px}
+    .cta{margin:20px 0;padding:14px;border-radius:8px;background:#eef2ff;border:1px solid #dbeafe}
+    footer{margin-top:36px;padding:18px 0;color:#64748b;font-size:.9rem;border-top:1px solid #e6e9ee}
+    a{color:#0f62fe}
+    ul, ol { margin-top:0; }
+    .tools {display:flex;gap:8px;flex-wrap:wrap}
+    .tag{background:#f1f5f9;padding:6px 8px;border-radius:999px;font-size:.85rem;color:#0b1220;border:1px solid #e6eef8}
+    .video-wrap{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:8px}
+    .video-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+    .caption{font-size:0.95rem;color:#475569;margin-top:8px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="hero" role="banner" aria-labelledby="art-heading">
+      <h1 id="art-heading">Discover Indian Art Forms</h1>
+      <p>This page is part of the game created by Team Vriddhi, NPS Jayanagar, Bengaluru — a guided tour of India's performing, visual, and craft traditions that appear in the game.</p>
+    </header>
 
+    <main role="main" class="grid" aria-labelledby="overview-heading">
+      <section aria-labelledby="overview-heading" class="card">
+        <h2 id="overview-heading">Overview</h2>
+        <p>India's art forms are diverse, regionally rooted, and full of stories, techniques, and values. In the game, players encounter challenges inspired by dance, music, crafts, theatre, and folk traditions. Each encounter aims to teach cultural context while encouraging strategic thinking and teamwork.</p>
+        <div class="tools" aria-hidden="true" style="margin-top:8px">
+          <span class="tag">Dance</span><span class="tag">Music</span><span class="tag">Crafts</span><span class="tag">Storytelling</span><span class="tag">Games</span><span class="tag">Mandala</span>
+        </div>
+      </section>
+
+      <section aria-labelledby="types-heading" class="card">
+        <h2 id="types-heading">Types of art forms (please click the artform name to explore more)</h2>
+        <ol>
+          <li>
+            <a href="#mandala-section">Mandala Art</a> — Mandala art is a symbolic circular design that originated in Hindu and Buddhist traditions to represent the universe's wholeness and interconnectedness. The term "mandala" means "circle" in Sanskrit. These artworks typically feature intricate geometric patterns that radiate from a central point and were traditionally used for meditation and sacred rituals. Creating mandalas is now a popular practice for its meditative and therapeutic benefits, promoting focus, mindfulness, and relaxation.
+          </li>
+        </ol>
+
+        <!-- Embedded Mandala video and short explainer -->
+        <section id="mandala-section" aria-labelledby="mandala-heading" style="margin-top:14px">
+          <h3 id="mandala-heading">Mandala Art — Explore</h3>
+          <div class="video-wrap" aria-hidden="false">
+            <!-- Embedded YouTube video (lazy-loaded with loading="lazy") -->
+            <iframe
+              title="Mandala Art demonstration"
+              src="https://www.youtube.com/embed/c2N782GmftI"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              loading="lazy"></iframe>
+          </div>
+          <p class="caption">Watch: A short demonstration of mandala creation. (Source: YouTube)</p>
+          <p class="caption">External link: <a href="https://www.youtube.com/watch?v=c2N782GmftI" target="_blank" rel="noopener noreferrer">Open the Mandala Art video on YouTube</a></p>
+        </section>
+      </section>
+
+      <section aria-labelledby="forms-heading" class="card">
+        <h2 id="forms-heading">Major art forms featured</h2>
+        <div class="cards" role="list">
+          <article class="card" role="listitem" aria-labelledby="dance">
+            <h3 id="dance">Classical & Folk Dance</h3>
+            <div class="media">
+              <img src="https://via.placeholder.com/140x100" alt="Dance performance" />
+              <div>
+                <p>From Bharatanatyam's rhythmic storytelling to vibrant folk dances, dance sequences in the game teach rhythm, symbolism, and cultural context. Tasks may ask players to identify gestures, match rhythms, or recreate simple sequences as team puzzles.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" role="listitem" aria-labelledby="music">
+            <h3 id="music">Music & Instruments</h3>
+            <div class="media">
+              <img src="https://via.placeholder.com/140x100" alt="Traditional musical instruments" />
+              <div>
+                <p>Explore classical ragas, folk songs, and traditional instruments. Gameplay uses short audio cues and recognition challenges to promote listening skills and cultural appreciation.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" role="listitem" aria-labelledby="crafts">
+            <h3 id="crafts">Handicrafts & Visual Arts</h3>
+            <div class="media">
+              <img src="https://via.placeholder.com/140x100" alt="Handicraft example" />
+              <div>
+                <p>Textiles, pottery, rangoli, and painting traditions appear as visual puzzles and creation challenges that reward observation, pattern recognition, and creativity.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" role="listitem" aria-labelledby="theatre">
+            <h3 id="theatre">Theatre & Storytelling</h3>
+            <div class="media">
+              <img src="https://via.placeholder.com/140x100" alt="Storytelling performance" />
+              <div>
+                <p>Folk tales and classic dramas are used to present moral dilemmas and strategy scenarios. Players decode clues from stories to make team decisions and progress.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" role="listitem" aria-labelledby="games">
+            <h3 id="games">Traditional Games & Play</h3>
+            <div class="media">
+              <img src="https://via.placeholder.com/140x100" alt="Kids playing a traditional game" />
+              <div>
+                <p>Simple traditional games inspire in-game mini-games that teach rules, turn-taking, and collaborative tactics — aligning with the project's larger learning objectives.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section aria-labelledby="interactive-heading" class="card">
+        <h2 id="interactive-heading">Interactive learning & activities</h2>
+        <ul>
+          <li><strong>Listen & match:</strong> Short audio clips of instruments or songs — match to region or emotion.</li>
+          <li><strong>Pattern puzzles:</strong> Recreate a rangoli or textile motif as a timed team exercise.</li>
+          <li><strong>Story clues:</strong> Decode a folktale to reveal a strategy that helps your team advance.</li>
+        </ul>
+        <p>We recommend including small media clips (10–20s), images with alt text, and guided prompts so the activities remain accessible and engaging. For video content, provide captions or transcripts for accessibility.</p>
+      </section>
+
+      <section aria-labelledby="resources-heading" class="card">
+        <h2 id="resources-heading">Resources & citations</h2>
+        <p>Below are suggested resource types to link from this page (credit primary sources where appropriate):</p>
+        <ul>
+          <li>Intro videos or recorded performances (official archives, museums).</li>
+          <li>Short articles or explainers about regional art forms and terminology.</li>
+          <li>How-to guides for simple crafts and mindful play activities.</li>
+        </ul>
+        <p>If you provide specific source links or multimedia, I will add them into this page with proper attribution and structured data for SEO.</p>
+      </section>
+
+      <aside class="cta card" role="complementary" aria-labelledby="contrib-heading">
+        <h3 id="contrib-heading">Contribute & suggest</h3>
+        <p>If you have references, photos, audio clips, or local stories to include, please share them with Team Vriddhi. Contributions help keep the game authentic and diverse.</p>
+        <p><a href="/contact">Contact the team</a> · <a href="about us.html">About Team Vriddhi</a></p>
+      </aside>
+    </main>
+
+    <footer role="contentinfo">
+      <p>© <span id="year">2025</span> Team Vriddhi — NPS Jayanagar, Bengaluru · <a href="/privacy">Privacy</a></p>
+    </footer>
+  </div>
+
+  <script>
+    // set current year dynamically
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
