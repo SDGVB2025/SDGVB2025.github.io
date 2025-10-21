@@ -1,31 +1,62 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Welcome — where Strategy meets Tradition</title>
-  <meta name="description" content="Viksit Bharat Project by Team Vriddhi (NPS Jayanagar): explore artforms, drawing classes, and manuals that blend strategy with tradition." />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome | Viksit Bharat Project</title>
 
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
 
-  <!-- Site styles -->
-  <link href="assets/css/styles.css" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fdfdfd;
+    }
+    .navbar-brand {
+      font-weight: 700;
+      color: #0056b3 !important;
+    }
+    .hero {
+      background: linear-gradient(to right, #f8f9fa, #e9ecef);
+      padding: 60px 20px;
+      text-align: center;
+      border-radius: 10px;
+      margin-top: 40px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #f8f9fa;
+      margin-top: 40px;
+    }
+  </style>
 </head>
-<body class="d-flex flex-column min-vh-100">
+<body>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="index.html">Viksit Bharat Project by Team Vriddhi, NPS Jayanagar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="index.html">Viksit Bharat Project</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="mainNav">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="siteNav">
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
-          <li class="nav-item"><a class="nav-link" href="artforms.html">Artforms</a></li>
+          <li class="nav-item"><a class="nav-link" href="artforms.html">Art Forms</a></li>
           <li class="nav-item"><a class="nav-link" href="drawingclasses.html">Drawing Classes</a></li>
           <li class="nav-item"><a class="nav-link" href="manual.html">Manual</a></li>
         </ul>
@@ -33,99 +64,22 @@
     </div>
   </nav>
 
-  <!-- Main content -->
-  <main class="container py-5">
-    <div class="p-4 mb-4 bg-body rounded-3">
-      <div class="container-fluid py-2">
-        <h1 class="display-6 fw-bold">Welcome!</h1>
-        <p class="col-md-8 fs-6">Use the tabs below to quickly view core sections. You can also open each section as a separate page using the navbar links.</p>
-      </div>
-    </div>
+  <!-- Main Section -->
+  <div class="container hero">
+    <h1 class="display-5 fw-bold">Welcome to Viksit Bharat Project</h1>
+    <p class="lead mt-3">
+      Where creativity meets tradition — explore India’s diverse art forms, 
+      learn to draw, and discover the culture that inspires our work.
+    </p>
+    <a href="artforms.html" class="btn btn-primary btn-lg mt-3">Explore Art Forms</a>
+  </div>
 
-    <!-- In-page tabs (About Us, Artforms, Drawing Classes, Manual) -->
-    <section aria-label="Homepage quick tabs">
-      <ul class="nav nav-tabs" id="homeTabs" role="tablist">
-        <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="tab-aboutus" data-bs-toggle="tab" data-bs-target="#aboutus" type="button" role="tab" aria-controls="aboutus" aria-selected="true">About Us</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="tab-artforms" data-bs-toggle="tab" data-bs-target="#artforms" type="button" role="tab" aria-controls="artforms" aria-selected="false">Artforms</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="tab-drawingclasses" data-bs-toggle="tab" data-bs-target="#drawingclasses" type="button" role="tab" aria-controls="drawingclasses" aria-selected="false">Drawing Classes</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="tab-manual" data-bs-toggle="tab" data-bs-target="#manual" type="button" role="tab" aria-controls="manual" aria-selected="false">Manual</button>
-        </li>
-      </ul>
-
-      <div class="tab-content border border-top-0 p-4" id="homeTabsContent">
-        <div class="tab-pane fade show active" id="aboutus" role="tabpanel" aria-labelledby="tab-aboutus">
-          <h2>About Us</h2>
-          <p>This is a community for Students and academicians created by Class-7 students of NPS Jayanagar.</p>
-          <p><a href="aboutus.html" class="btn btn-outline-primary btn-sm">Read full About Us page</a></p>
-        </div>
-
-        <div class="tab-pane fade" id="artforms" role="tabpanel" aria-labelledby="tab-artforms">
-          <h2>Artforms</h2>
-          <p>Overview of artforms we cover (painting, sculpture, etc.).</p>
-          <p><a href="artforms.html" class="btn btn-outline-primary btn-sm">Open Artforms page</a></p>
-        </div>
-
-        <div class="tab-pane fade" id="drawingclasses" role="tabpanel" aria-labelledby="tab-drawingclasses">
-          <h2>Drawing Classes</h2>
-          <p>Details about drawing classes: Informative Videos.</p>
-          <p><a href="drawingclasses.html" class="btn btn-outline-primary btn-sm">See Drawing Classes</a></p>
-        </div>
-
-        <div class="tab-pane fade" id="manual" role="tabpanel" aria-labelledby="tab-manual">
-          <h2>Manual</h2>
-          <p>Training manuals and resources for students and teachers.</p>
-          <p><a href="manual.html" class="btn btn-outline-primary btn-sm">Open Manual</a></p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="bg-light py-3 mt-auto">
-    <div class="container text-center">
-      <small class="text-muted">© Team Vriddhi, NPS Jayanagar, 2025</small>
-    </div>
+  <!-- Footer -->
+  <footer>
+    <p class="mb-0">&copy; 2025 Viksit Bharat Project | Designed by Team Vriddhi, NPS Jayanagar</p>
   </footer>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-  <script>
-    // Highlight active navbar link based on current filename
-    (function () {
-      const links = document.querySelectorAll('#siteNav a.nav-link');
-      const current = location.pathname.split('/').pop() || 'index.html';
-      links.forEach(a => {
-        if (a.getAttribute('href') === current) a.classList.add('active');
-      });
-    })();
-
-    // Persist/restore in-page tab selection via URL hash (e.g., index.html#artforms)
-    (function () {
-      const { Tab } = bootstrap;
-      function showTabFromHash() {
-        const hash = location.hash;
-        if (!hash) return;
-        const btn = document.querySelector('[data-bs-target="' + hash + '"]');
-        if (btn) new Tab(btn).show();
-      }
-      window.addEventListener('load', showTabFromHash);
-
-      // When a tab is shown, update the hash so it’s linkable
-      const triggers = document.querySelectorAll('#homeTabs [data-bs-toggle="tab"]');
-      triggers.forEach(t => {
-        t.addEventListener('shown.bs.tab', (ev) => {
-          const target = ev.target.getAttribute('data-bs-target');
-          history.replaceState(null, '', target);
-        });
-      });
-    })();
-  </script>
 </body>
 </html>
