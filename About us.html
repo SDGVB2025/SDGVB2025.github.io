@@ -3,57 +3,87 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>SDGVB2025 — About Us</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="assets/css/styles.css" rel="stylesheet" />
+  <title>About — Team Vriddhi</title>
+  <meta name="description" content="A game by Team Vriddhi (NPS Jayanagar) that reconnects youth with India’s traditions while building strategic thinking, teamwork, and mindful play." />
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;color:#0b1220;margin:0;line-height:1.5;background:#f8fafc}
+    .container{max-width:1000px;margin:32px auto;padding:0 16px}
+    header.hero{padding:28px 0;border-bottom:1px solid #e6e9ee}
+    .hero h1{margin:.2rem 0;font-size:1.9rem}
+    .hero p{margin:0;color:#334155}
+    .grid{display:grid;gap:16px}
+    .values{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin:16px 0}
+    .value-card{background:#fff;padding:18px;border-radius:8px;border:1px solid #eef2f7}
+    .team{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin:12px 0}
+    .member{padding:12px;border-radius:8px;border:1px solid #eef2f7;text-align:left;background:#fff}
+    .timeline{margin:16px 0;padding-left:18px}
+    .cta{margin:20px 0;padding:14px;border-radius:8px;background:#eef2ff;border:1px solid #dbeafe}
+    footer{margin-top:36px;padding:18px 0;color:#64748b;font-size:.9rem;border-top:1px solid #e6e9ee}
+    ol, ul { margin-top: 0; }
+  </style>
 </head>
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="index.html">SDGVB2025</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="mainNav">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="siteNav">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-          <li class="nav-item"><a class="nav-link" href="artforms.html">Artforms</a></li>
-          <li class="nav-item"><a class="nav-link" href="drawing-classes.html">Drawing Classes</a></li>
-          <li class="nav-item"><a class="nav-link" href="manual.html">Manual</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  <div class="container">
+    <header class="hero" role="banner" aria-labelledby="about-heading">
+      <h1 id="about-heading">A team-based game to rediscover India’s traditions</h1>
+      <p>This web page is part of a game created by Team Vriddhi at NPS Jayanagar, Bengaluru.</p>
+    </header>
 
-  <main class="container py-5">
-    <h1>About Us</h1>
-    <p>Introduce SDGVB2025: who you are, history, mission, and values. Replace this placeholder text with your real About Us content.</p>
+    <main role="main" class="grid" aria-labelledby="intro-heading">
+      <section aria-labelledby="intro-heading">
+        <h2 id="intro-heading">About the game</h2>
+        <p>
+          As AI becomes more pervasive and younger generations drift away from India’s traditions and culture, our game aims to bring those traditions back into the memories of our generation. Through engaging, team-based gameplay we build strategic thinking and cooperation while exploring India’s cultural heritage. The goal of the game is to strengthen teamwork, improve decision‑making and patience, and enhance thinking ability by showing how intelligence, creativity, and mindful play can overcome brute strength.
+        </p>
+      </section>
 
-    <h2>Our Mission</h2>
-    <p>Write the mission statement and goals here.</p>
+      <section aria-labelledby="learning-heading">
+        <h2 id="learning-heading">Learning objectives</h2>
+        <ol>
+          <li>Builds strategic thinking and teamwork.</li>
+          <li>Improves decision‑making and patience.</li>
+          <li>Reflects Indian culture and traditional wisdom.</li>
+          <li>Demonstrates that intelligence can overcome strength.</li>
+          <li>Encourages creative and mindful play.</li>
+        </ol>
+      </section>
 
-    <h2>Team</h2>
-    <p>Optionally list team members, instructors, or contributors.</p>
-  </main>
+      <section aria-labelledby="team-heading">
+        <h2 id="team-heading">Team (in alphabetical order)</h2>
+        <div class="team" role="list">
+          <article class="member" role="listitem" aria-labelledby="a1">
+            <h3 id="a1">Aditi Rajesh</h3>
+          </article>
+          <article class="member" role="listitem" aria-labelledby="a2">
+            <h3 id="a2">Anagha Vishwanath</h3>
+          </article>
+          <article class="member" role="listitem" aria-labelledby="a3">
+            <h3 id="a3">Sahana Sham</h3>
+          </article>
+          <article class="member" role="listitem" aria-labelledby="a4">
+            <h3 id="a4">Srijani Dasgupta</h3>
+          </article>
+          <article class="member" role="listitem" aria-labelledby="a5">
+            <h3 id="a5">Vishrutha V.C.</h3>
+          </article>
+        </div>
+        <p style="margin-top:8px;"><strong>— Team Vriddhi</strong></p>
+      </section>
 
-  <footer class="bg-light py-3 mt-auto">
-    <div class="container text-center">
-      <small class="text-muted">© SDGVB2025 — 2025</small>
-    </div>
-  </footer>
+      <aside class="cta" role="complementary" aria-labelledby="cta-heading">
+        <h3 id="cta-heading">Get involved</h3>
+        <p>If you'd like to contribute ideas, test the game, or suggest cultural references to include, please contact the team via your project's usual channels.</p>
+      </aside>
+    </main>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <footer role="contentinfo">
+      <p>© <span id="year">2025</span> Team Vriddhi — NPS Jayanagar, Bengaluru · <a href="/privacy">Privacy</a></p>
+    </footer>
+  </div>
+
   <script>
-    // Highlight active nav link
-    (function () {
-      const links = document.querySelectorAll('#siteNav a.nav-link');
-      const current = location.pathname.split('/').pop() || 'index.html';
-      links.forEach(a => {
-        if (a.getAttribute('href') === current) a.classList.add('active');
-      });
-    })();
+    // set current year dynamically
+    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
