@@ -55,18 +55,15 @@
     .skip-link{ position: absolute; left:-9999px; top:auto; width:1px; height:1px; overflow:hidden; }
     .skip-link:focus{ left: 16px; top: 8px; width:auto; height:auto; padding:8px 12px; background:#fff; border:2px solid var(--link); border-radius:8px; z-index:1000 }
 
-    /* Focus visibility */
     :where(a, button, summary, [tabindex]){ outline-offset:3px }
     :where(a, button, summary, [tabindex]):focus-visible{ outline: 2px solid var(--link) }
 
-    /* Responsive tweak for media blocks */
     @media (max-width: 520px){
       .media{ flex-direction: column }
       .media img{ width:100%; height:auto }
     }
   </style>
 
-  <!-- Structured data: describe the page for search/knowledge panels -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -102,26 +99,25 @@
           <li>
             <a href="#mandala-section">Mandala Art</a> — Mandala art is a symbolic circular design that originated in Hindu and Buddhist traditions to represent the universe's wholeness and interconnectedness. The term “mandala” means “circle” in Sanskrit. These artworks typically feature intricate geometric patterns radiating from a central point and were traditionally used for meditation and sacred rituals. Creating mandalas is popular today for its meditative and therapeutic benefits, promoting focus, mindfulness, and relaxation.
           </li>
-                  <li>
+          <li>
             <a href="#madhubani-section">Madhubani (Mithila) Painting</a> — A folk art tradition from Bihar’s Mithila region, characterized by intricate line work and vibrant fills. Traditionally painted on mud walls and floors, it is now created on paper, cloth, and canvas using fingers, twigs, brushes, and nib pens. Themes span mythology, nature, and daily life, featuring motifs like deities, animals, flowers, and geometric patterns, often colored with natural dyes derived from turmeric, henna, and charcoal.
           </li>
         </ol>
 
-        <!-- Embedded Mandala video and short explainer -->
         <section id="mandala-section" aria-labelledby="mandala-heading" style="margin-top:14px">
           <h3 id="mandala-heading">Mandala Art — Explore</h3>
           <div class="video-wrap" aria-hidden="false">
-            <!-- Use privacy-enhanced YouTube domain + lazy loading -->
             <iframe
               title="Mandala Art demonstration"
-              src="https://www.youtube-nocookie.com/embed/c2N782GmftI"
+              src="https://www.youtube-nocookie.com/embed/cm5KZtjFRac?list=PLfCXz1k9U7kmSR0zsZieirVIHA7SFMsI_"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
               loading="lazy"></iframe>
           </div>
           <p class="caption">Watch: A short demonstration of mandala creation. (Source: YouTube)</p>
-          <p class="caption">External link: <a href="https://www.youtube.com/watch?v=c2N782GmftI" target="_blank" rel="noopener noreferrer">Open the Mandala Art video on YouTube</a></p>
-                <!-- Embedded Madhubani video and short explainer -->
+          <p class="caption">External link: <a href="https://www.youtube.com/watch?v=cm5KZtjFRac&list=PLfCXz1k9U7kmSR0zsZieirVIHA7SFMsI_" target="_blank" rel="noopener noreferrer">Open the Mandala Art video on YouTube</a></p>
+        </section>
+
         <section id="madhubani-section" aria-labelledby="madhubani-heading" style="margin-top:14px">
           <h3 id="madhubani-heading">Madhubani (Mithila) Painting — Explore</h3>
           <div class="video-wrap" aria-hidden="false">
@@ -136,9 +132,6 @@
           <p class="caption">External link: <a href="https://www.youtube.com/watch?v=NDSFNEMl7JU" target="_blank" rel="noopener noreferrer">Open the Madhubani video on YouTube</a></p>
           <p>Madhubani (also known as Mithila painting) is a traditional folk art from the Mithila region of Bihar, characterized by intricate patterns and vibrant colors. Originally painted on mud walls and floors, it is now practiced on paper, cloth, and canvas using fingers, twigs, brushes, and nib pens. Subjects include mythological and religious scenes as well as nature, with common motifs such as gods, animals, flowers, and geometric patterns. Colors are often derived from natural sources like turmeric, henna, and charcoal.</p>
         </section>
-
-      </section>
-
       </section>
 
       <section aria-labelledby="forms-heading" class="card">
@@ -230,7 +223,6 @@
   </div>
 
   <script>
-    // Set current year dynamically
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
