@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Welcome where Strategy meets Tradition</title>
+  <title>Welcome — where Strategy meets Tradition</title>
+  <meta name="description" content="Viksit Bharat Project by Team Vriddhi (NPS Jayanagar): explore artforms, drawing classes, and manuals that blend strategy with tradition." />
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -11,11 +12,11 @@
   <!-- Site styles -->
   <link href="assets/css/styles.css" rel="stylesheet" />
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="index.html">Viksit Bharat Project by Team Vriddhi, NPS Jayanagar </a>
+      <a class="navbar-brand fw-bold" href="index.html">Viksit Bharat Project by Team Vriddhi, NPS Jayanagar</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -59,22 +60,22 @@
       </ul>
 
       <div class="tab-content border border-top-0 p-4" id="homeTabsContent">
-        <div class="tab-pane fade show active" id="aboutus" role="tabpanel" aria-labelledby="tab-about">
+        <div class="tab-pane fade show active" id="aboutus" role="tabpanel" aria-labelledby="tab-aboutus">
           <h2>About Us</h2>
-          <p>This is a community for Students and academicians created by Class-7 students of NPS Jayanagar</p>
-          <p><a href="about.html" class="btn btn-outline-primary btn-sm">Read full About Us page</a></p>
+          <p>This is a community for Students and academicians created by Class-7 students of NPS Jayanagar.</p>
+          <p><a href="aboutus.html" class="btn btn-outline-primary btn-sm">Read full About Us page</a></p>
         </div>
 
         <div class="tab-pane fade" id="artforms" role="tabpanel" aria-labelledby="tab-artforms">
           <h2>Artforms</h2>
-          <p>Overview of artforms we cover (painting, sculpture, etc.). </p>
+          <p>Overview of artforms we cover (painting, sculpture, etc.).</p>
           <p><a href="artforms.html" class="btn btn-outline-primary btn-sm">Open Artforms page</a></p>
         </div>
 
-        <div class="tab-pane fade" id="drawingclasses" role="tabpanel" aria-labelledby="tab-drawing">
+        <div class="tab-pane fade" id="drawingclasses" role="tabpanel" aria-labelledby="tab-drawingclasses">
           <h2>Drawing Classes</h2>
           <p>Details about drawing classes: Informative Videos.</p>
-          <p><a href="drawing-classes.html" class="btn btn-outline-primary btn-sm">See Drawing Classes</a></p>
+          <p><a href="drawingclasses.html" class="btn btn-outline-primary btn-sm">See Drawing Classes</a></p>
         </div>
 
         <div class="tab-pane fade" id="manual" role="tabpanel" aria-labelledby="tab-manual">
@@ -111,18 +112,12 @@
       function showTabFromHash() {
         const hash = location.hash;
         if (!hash) return;
-        // hash corresponds to id of tab-pane (#about, #artforms, #drawing, #manual)
         const btn = document.querySelector('[data-bs-target="' + hash + '"]');
-        if (btn) {
-          const tab = new Tab(btn);
-          tab.show();
-        }
+        if (btn) new Tab(btn).show();
       }
-
-      // On page load, show tab if hash is present
       window.addEventListener('load', showTabFromHash);
 
-      // When a tab is shown, update the hash so linkable
+      // When a tab is shown, update the hash so it’s linkable
       const triggers = document.querySelectorAll('#homeTabs [data-bs-toggle="tab"]');
       triggers.forEach(t => {
         t.addEventListener('shown.bs.tab', (ev) => {
