@@ -1,58 +1,142 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Drawing Classes</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="assets/css/styles.css" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Drawing Classes | Viksit Bharat Project by Team Vriddhi, NPS Jayanagar</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <style>
+    body { font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; background-color: #ffffff; }
+    .navbar-brand { font-weight: 700; }
+    .lead-sub { color: #4b5563; }
+    .section { margin-top: 40px; }
+    .lesson-card {
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      padding: 20px;
+      background-color: #ffffff;
+      margin-bottom: 20px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+    }
+    .involvement-box {
+      background-color: #f3f4f6;
+      border-radius: 8px;
+      padding: 20px;
+      margin-top: 20px;
+    }
+    footer { text-align: center; padding: 20px; background-color: #f8f9fa; margin-top: 50px; }
+  </style>
 </head>
 <body>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="index.html">SDGVB2025</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="index.html">Viksit Bharat Project by Team Vriddhi, NPS Jayanagar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="mainNav">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="siteNav">
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-          <li class="nav-item"><a class="nav-link" href="artforms.html">Artforms</a></li>
-          <li class="nav-item"><a class="nav-link" href="drawing-classes.html">Drawing Classes</a></li>
+          <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="artforms.html">Art Forms</a></li>
+          <li class="nav-item"><a class="nav-link active" href="drawingclasses.html">Drawing Classes</a></li>
           <li class="nav-item"><a class="nav-link" href="manual.html">Manual</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <main class="container py-5">
-    <h1>Drawing Classes</h1>
-    <p>Provide details about drawing classes: levels (beginner/intermediate/advanced), schedule, fees, and instructor bios.</p>
+  <!-- Main -->
+  <main class="container mt-5 mb-5">
+    <h2 class="fw-bold">Drawing Classes</h2>
+    <p class="lead-sub">Quick links to beginner-friendly videos and overviews for each art form. (Source: YouTube)</p>
+    <hr />
 
-    <h2>Schedule</h2>
-    <p>List class times and enrollment links or instructions.</p>
+    <!-- Mandala -->
+    <section class="lesson-card">
+      <h5 class="fw-semibold">Mandala — Explore</h5>
+      <p class="mb-1"><strong>Watch:</strong> A short demonstration of mandala creation. <em>(Source: YouTube)</em></p>
+      <p class="mb-2"><strong>External link:</strong> How To Draw Easy Mandala For Beginners || HOW TO Make the SIMPLE MANDALA || MANDALA ART for beginner</p>
+      <a class="btn btn-outline-primary btn-sm" target="_blank" rel="noopener"
+         href="https://www.youtube.com/results?search_query=How+To+Draw+Easy+Mandala+For+Beginners+HOW+TO+Make+the+SIMPLE+MANDALA+MANDALA+ART+for+beginner">
+        Open on YouTube
+      </a>
+    </section>
 
-    <h2>Instructors</h2>
-    <p>Short bios of instructors and sample works (images or links).</p>
+    <!-- Madhubani -->
+    <section class="lesson-card">
+      <h5 class="fw-semibold">Madhubani (Mithila) — Explore</h5>
+      <p class="mb-1"><strong>Watch:</strong> A brief overview and technique demonstration of Madhubani art. <em>(Source: YouTube)</em></p>
+      <p class="mb-2"><strong>External link:</strong> Madhubani Painting II a video for Beginners II Session 1 II Mithila Art in English II Sketching Tips</p>
+      <a class="btn btn-outline-primary btn-sm" target="_blank" rel="noopener"
+         href="https://www.youtube.com/results?search_query=Madhubani+Painting+video+for+Beginners+Session+1+Mithila+Art+in+English+Sketching+Tips">
+        Open on YouTube
+      </a>
+    </section>
+
+    <!-- Gond -->
+    <section class="lesson-card">
+      <h5 class="fw-semibold">Gond — Explore</h5>
+      <p class="mb-1"><strong>Watch:</strong> A brief overview and technique demonstration of Gond art. <em>(Source: YouTube)</em></p>
+      <p class="mb-2"><strong>External link:</strong> Gond Art for beginners || Part 1 || Gond Art Patterns || Gond Art</p>
+      <a class="btn btn-outline-primary btn-sm" target="_blank" rel="noopener"
+         href="https://www.youtube.com/results?search_query=Gond+Art+for+beginners+Part+1+Gond+Art+Patterns+Gond+Art">
+        Open on YouTube
+      </a>
+    </section>
+
+    <!-- Kalamkari -->
+    <section class="lesson-card">
+      <h5 class="fw-semibold">Kalamkari — Explore</h5>
+      <p class="mb-1"><strong>Watch:</strong> A brief overview and technique demonstration of Kalamkari art. <em>(Source: YouTube)</em></p>
+      <p class="mb-2"><strong>External link:</strong> Learn Kalamkari Art | Kalamkari Painting Tutorial | Kalamkari Painting for Beginners | Art Tutorial</p>
+      <a class="btn btn-outline-primary btn-sm" target="_blank" rel="noopener"
+         href="https://www.youtube.com/results?search_query=Learn+Kalamkari+Art+Painting+Tutorial+for+Beginners+Art+Tutorial">
+        Open on YouTube
+      </a>
+    </section>
+
+    <!-- Pichwai -->
+    <section class="lesson-card">
+      <h5 class="fw-semibold">Pichwai — Explore</h5>
+      <p class="mb-1"><strong>Watch:</strong> A brief overview and technique demonstration of Pichwai art. <em>(Source: YouTube)</em></p>
+      <p class="mb-2"><strong>External link:</strong> Easy Pichwai Cow Painting for Beginners | Pichwai Painting | Cow and Lotus Painting</p>
+      <a class="btn btn-outline-primary btn-sm" target="_blank" rel="noopener"
+         href="https://www.youtube.com/results?search_query=Easy+Pichwai+Cow+Painting+for+Beginners+Pichwai+Painting+Cow+and+Lotus+Painting">
+        Open on YouTube
+      </a>
+    </section>
+
+    <!-- Contribute -->
+    <section class="section">
+      <div class="involvement-box">
+        <h5 class="fw-semibold">Contribute & suggest</h5>
+        <p class="mb-0">
+          If you have references, photos, audio clips, or local stories to include, please share them with Team Vriddhi.
+          Contributions help keep the game authentic and diverse.
+        </p>
+      </div>
+    </section>
+
+    <!-- About Team -->
+    <section class="section">
+      <h6 class="fw-semibold">About Team Vriddhi</h6>
+      <p class="mb-0">© 2025 Team Vriddhi — NPS Jayanagar, Bengaluru · Privacy</p>
+    </section>
   </main>
 
-  <footer class="bg-light py-3 mt-auto">
-    <div class="container text-center">
-      <small class="text-muted">© SDGVB2025 — 2025</small>
-    </div>
+  <!-- Footer -->
+  <footer>
+    <p class="mb-0">© Team Vriddhi, NPS Jayanagar, 2025</p>
   </footer>
 
+  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    (function () {
-      const links = document.querySelectorAll('#siteNav a.nav-link');
-      const current = location.pathname.split('/').pop() || 'index.html';
-      links.forEach(a => {
-        if (a.getAttribute('href') === current) a.classList.add('active');
-      });
-    })();
-  </script>
 </body>
 </html>
