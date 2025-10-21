@@ -1,229 +1,179 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Art Forms — Team Vriddhi</title>
-  <meta name="description" content="Explore India's rich art forms — dance, music, crafts, theatre, mandala art and more. A learning resource by Team Vriddhi, NPS Jayanagar." />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Art Forms | Viksit Bharat Project by Team Vriddhi, NPS Jayanagar</title>
 
-  <!-- Social sharing -->
-  <meta property="og:title" content="Art Forms — Team Vriddhi" />
-  <meta property="og:description" content="Explore India's rich art forms — dance, music, crafts, theatre, mandala art and more." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://example.com/art-forms" />
-  <meta property="og:image" content="https://example.com/og/artforms.jpg" />
-  <meta name="twitter:card" content="summary_large_image" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
 
   <style>
-    :root{
-      --bg:#fbfcfe; --text:#0b1220; --muted:#334155; --card:#fff; --border:#e6e9ee; --chip:#f1f5f9; --chip-border:#e6eef8; --link:#0f62fe; --info-bg:#eef2ff; --info-border:#dbeafe;
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #ffffff;
     }
-    * { box-sizing: border-box; }
-    html:focus-within { scroll-behavior: smooth; }
-    @media (prefers-reduced-motion: reduce){ html:focus-within{ scroll-behavior: auto; } }
-    body{font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; color:var(--text); margin:0; line-height:1.6; background:var(--bg)}
-
-    a{ color:var(--link); text-decoration: none; }
-    a:hover{ text-decoration: underline; }
-
-    .container{ max-width: 1000px; margin: 32px auto; padding: 0 16px; }
-    header.hero{ padding: 28px 0; border-bottom: 1px solid var(--border); }
-    .hero h1{ margin: .2rem 0; font-size: clamp(1.6rem, 1.2rem + 1.2vw, 2rem); }
-    .hero p{ margin: 0; color: var(--muted); }
-
-    .grid{ display: grid; gap: 20px; }
-    .cards{ display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
-
-    .card{ background: var(--card); padding: 16px; border-radius: 12px; border:1px solid #eef2f7; box-shadow: 0 1px 1px rgba(0,0,0,.02); }
-    .card h2, .card h3 { margin-top: 0; }
-
-    .media{ display:flex; gap:12px; align-items:flex-start }
-    .media img{ width:140px; height:100px; object-fit:cover; border-radius: 8px; flex-shrink:0 }
-
-    .cta{ margin: 20px 0; padding: 14px; border-radius: 12px; background: var(--info-bg); border:1px solid var(--info-border) }
-    footer{ margin-top: 36px; padding: 18px 0; color:#64748b; font-size:.95rem; border-top:1px solid var(--border) }
-
-    ul, ol { margin-top: 0; padding-left: 1.25rem; }
-    .tools { display:flex; gap:8px; flex-wrap:wrap }
-    .tag{ background:var(--chip); padding:6px 8px; border-radius:999px; font-size:.85rem; color:var(--text); border:1px solid var(--chip-border) }
-
-    .video-wrap{ position: relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius: 12px; background:#000 }
-    .video-wrap iframe{ position:absolute; top:0; left:0; width:100%; height:100%; border:0 }
-    .caption{ font-size:.95rem; color:#475569; margin-top:8px }
-
-    .sr-only{ position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0 }
-    .skip-link{ position: absolute; left:-9999px; top:auto; width:1px; height:1px; overflow:hidden; }
-    .skip-link:focus{ left: 16px; top: 8px; width:auto; height:auto; padding:8px 12px; background:#fff; border:2px solid var(--link); border-radius:8px; z-index:1000 }
-
-    :where(a, button, summary, [tabindex]){ outline-offset:3px }
-    :where(a, button, summary, [tabindex]):focus-visible{ outline: 2px solid var(--link) }
-
-    @media (max-width: 520px){
-      .media{ flex-direction: column }
-      .media img{ width:100%; height:auto }
+    .navbar-brand {
+      font-weight: 700;
+    }
+    .lead-sub {
+      color: #4b5563;
+    }
+    .section {
+      margin-top: 40px;
+    }
+    .art-card {
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      padding: 20px;
+      background-color: #ffffff;
+      margin-bottom: 20px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+    }
+    .involvement-box {
+      background-color: #f3f4f6;
+      border-radius: 8px;
+      padding: 20px;
+      margin-top: 20px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #f8f9fa;
+      margin-top: 50px;
     }
   </style>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "EducationalWebPage",
-    "name": "Art Forms — Team Vriddhi",
-    "url": "https://example.com/art-forms",
-    "description": "Explore India's art forms — dance, music, crafts, theatre, mandala art and more. A learning resource by Team Vriddhi, NPS Jayanagar.",
-    "publisher": {"@type":"Organization","name":"Team Vriddhi, NPS Jayanagar"},
-    "inLanguage":"en"
-  }
-  </script>
 </head>
 <body>
-  <a href="#main" class="skip-link">Skip to main content</a>
-  <div class="container">
-    <header class="hero" role="banner" aria-labelledby="art-heading">
-      <h1 id="art-heading">Discover Indian Art Forms</h1>
-      <p>This page is part of the game created by Team Vriddhi, NPS Jayanagar, Bengaluru — a guided tour of India's performing, visual, and craft traditions that appear in the game.</p>
-    </header>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Viksit Bharat Project by Team Vriddhi, NPS Jayanagar</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <main id="main" role="main" class="grid" aria-labelledby="overview-heading">
-      <section aria-labelledby="overview-heading" class="card">
-        <h2 id="overview-heading">Overview</h2>
-        <p>India's art forms are diverse, regionally rooted, and full of stories, techniques, and values. In the game, players encounter challenges inspired by dance, music, crafts, theatre, and folk traditions. Each encounter aims to teach cultural context while encouraging strategic thinking and teamwork.</p>
-        <div class="tools" aria-hidden="true" style="margin-top:8px">
-          <span class="tag">Dance</span><span class="tag">Music</span><span class="tag">Crafts</span><span class="tag">Storytelling</span><span class="tag">Games</span><span class="tag">Mandala</span>
-        </div>
-      </section>
-
-      <section aria-labelledby="types-heading" class="card">
-        <h2 id="types-heading">Types of art forms (click to explore)</h2>
-        <ol>
-          <li>
-            <a href="#mandala-section">Mandala Art</a> — Mandala art is a symbolic circular design that originated in Hindu and Buddhist traditions to represent the universe's wholeness and interconnectedness. The term “mandala” means “circle” in Sanskrit. These artworks typically feature intricate geometric patterns radiating from a central point and were traditionally used for meditation and sacred rituals. Creating mandalas is popular today for its meditative and therapeutic benefits, promoting focus, mindfulness, and relaxation.
-          </li>
-          <li>
-            <a href="#madhubani-section">Madhubani (Mithila) Painting</a> — A folk art tradition from Bihar’s Mithila region, characterized by intricate line work and vibrant fills. Traditionally painted on mud walls and floors, it is now created on paper, cloth, and canvas using fingers, twigs, brushes, and nib pens. Themes span mythology, nature, and daily life, featuring motifs like deities, animals, flowers, and geometric patterns, often colored with natural dyes derived from turmeric, henna, and charcoal.
-          </li>
-        </ol>
-
-        <section id="mandala-section" aria-labelledby="mandala-heading" style="margin-top:14px">
-          <h3 id="mandala-heading">Mandala Art — Explore</h3>
-          <div class="video-wrap" aria-hidden="false">
-            <iframe
-              title="Mandala Art demonstration"
-              src="https://www.youtube-nocookie.com/embed/cm5KZtjFRac?list=PLfCXz1k9U7kmSR0zsZieirVIHA7SFMsI_"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-              loading="lazy"></iframe>
-          </div>
-          <p class="caption">Watch: A short demonstration of mandala creation. (Source: YouTube)</p>
-          <p class="caption">External link: <a href="https://www.youtube.com/watch?v=cm5KZtjFRac&list=PLfCXz1k9U7kmSR0zsZieirVIHA7SFMsI_" target="_blank" rel="noopener noreferrer">Open the Mandala Art video on YouTube</a></p>
-        </section>
-
-        <section id="madhubani-section" aria-labelledby="madhubani-heading" style="margin-top:14px">
-          <h3 id="madhubani-heading">Madhubani (Mithila) Painting — Explore</h3>
-          <div class="video-wrap" aria-hidden="false">
-            <iframe
-              title="Madhubani art demonstration"
-              src="https://www.youtube-nocookie.com/embed/NDSFNEMl7JU"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-              loading="lazy"></iframe>
-          </div>
-          <p class="caption">Watch: A brief overview and technique demonstration of Madhubani art. (Source: YouTube)</p>
-          <p class="caption">External link: <a href="https://www.youtube.com/watch?v=NDSFNEMl7JU" target="_blank" rel="noopener noreferrer">Open the Madhubani video on YouTube</a></p>
-          <p>Madhubani (also known as Mithila painting) is a traditional folk art from the Mithila region of Bihar, characterized by intricate patterns and vibrant colors. Originally painted on mud walls and floors, it is now practiced on paper, cloth, and canvas using fingers, twigs, brushes, and nib pens. Subjects include mythological and religious scenes as well as nature, with common motifs such as gods, animals, flowers, and geometric patterns. Colors are often derived from natural sources like turmeric, henna, and charcoal.</p>
-        </section>
-      </section>
-
-      <section aria-labelledby="forms-heading" class="card">
-        <h2 id="forms-heading">Major art forms featured</h2>
-        <div class="cards" role="list">
-          <article class="card" role="listitem" aria-labelledby="dance">
-            <h3 id="dance">Classical &amp; Folk Dance</h3>
-            <div class="media">
-              <img src="https://via.placeholder.com/280x200" width="280" height="200" alt="A staged Indian classical dance performance" loading="lazy" />
-              <div>
-                <p>From Bharatanatyam's rhythmic storytelling to vibrant folk dances, dance sequences in the game teach rhythm, symbolism, and cultural context. Tasks may ask players to identify gestures, match rhythms, or recreate simple sequences as team puzzles.</p>
-              </div>
-            </div>
-          </article>
-
-          <article class="card" role="listitem" aria-labelledby="music">
-            <h3 id="music">Music &amp; Instruments</h3>
-            <div class="media">
-              <img src="https://via.placeholder.com/280x200" width="280" height="200" alt="Traditional Indian musical instruments laid out for a recital" loading="lazy" />
-              <div>
-                <p>Explore classical ragas, folk songs, and traditional instruments. Gameplay uses short audio cues and recognition challenges to promote listening skills and cultural appreciation.</p>
-              </div>
-            </div>
-          </article>
-
-          <article class="card" role="listitem" aria-labelledby="crafts">
-            <h3 id="crafts">Handicrafts &amp; Visual Arts</h3>
-            <div class="media">
-              <img src="https://via.placeholder.com/280x200" width="280" height="200" alt="Close-up of handloom textile patterns and pottery" loading="lazy" />
-              <div>
-                <p>Textiles, pottery, rangoli, and painting traditions appear as visual puzzles and creation challenges that reward observation, pattern recognition, and creativity.</p>
-              </div>
-            </div>
-          </article>
-
-          <article class="card" role="listitem" aria-labelledby="theatre">
-            <h3 id="theatre">Theatre &amp; Storytelling</h3>
-            <div class="media">
-              <img src="https://via.placeholder.com/280x200" width="280" height="200" alt="Artist performing a folk theatre story with expressive gestures" loading="lazy" />
-              <div>
-                <p>Folk tales and classic dramas present moral dilemmas and strategy scenarios. Players decode clues from stories to make team decisions and progress.</p>
-              </div>
-            </div>
-          </article>
-
-          <article class="card" role="listitem" aria-labelledby="games">
-            <h3 id="games">Traditional Games &amp; Play</h3>
-            <div class="media">
-              <img src="https://via.placeholder.com/280x200" width="280" height="200" alt="Children playing a traditional board game" loading="lazy" />
-              <div>
-                <p>Simple traditional games inspire in-game mini-games that teach rules, turn-taking, and collaborative tactics — aligning with the project's larger learning objectives.</p>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section aria-labelledby="interactive-heading" class="card">
-        <h2 id="interactive-heading">Interactive learning &amp; activities</h2>
-        <ul>
-          <li><strong>Listen &amp; match:</strong> Short audio clips of instruments or songs — match to region or emotion.</li>
-          <li><strong>Pattern puzzles:</strong> Recreate a rangoli or textile motif as a timed team exercise.</li>
-          <li><strong>Story clues:</strong> Decode a folktale to reveal a strategy that helps your team advance.</li>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link active" href="artforms.html">Art Forms</a></li>
+          <li class="nav-item"><a class="nav-link" href="drawingclasses.html">Drawing Classes</a></li>
+          <li class="nav-item"><a class="nav-link" href="manual.html">Manual</a></li>
         </ul>
-        <p>Include small media clips (10–20s), images with descriptive alt text, and guided prompts so the activities remain accessible and engaging. For video content, provide captions or transcripts for accessibility.</p>
-      </section>
+      </div>
+    </div>
+  </nav>
 
-      <section aria-labelledby="resources-heading" class="card">
-        <h2 id="resources-heading">Resources &amp; citations</h2>
-        <p>Suggested resource types to link from this page (credit primary sources where appropriate):</p>
-        <ul>
-          <li>Intro videos or recorded performances (official archives, museums).</li>
-          <li>Short articles or explainers about regional art forms and terminology.</li>
-          <li>How‑to guides for simple crafts and mindful play activities.</li>
-        </ul>
-        <p>Share your specific links or multimedia and we’ll add them here with proper attribution and structured data for SEO.</p>
-      </section>
+  <!-- Main Section -->
+  <main class="container mt-5 mb-5">
+    <h2 class="fw-bold">Discover Indian Art Forms</h2>
+    <p class="lead-sub">
+      This page is part of the game created by <strong>Team Vriddhi</strong>, NPS Jayanagar, Bengaluru — 
+      a guided tour of India's performing, visual, and craft traditions that appear in the game.
+    </p>
 
-      <aside class="cta card" role="complementary" aria-labelledby="contrib-heading">
-        <h3 id="contrib-heading">Contribute &amp; suggest</h3>
-        <p>If you have references, photos, audio clips, or local stories to include, please share them with Team Vriddhi. Contributions help keep the game authentic and diverse.</p>
-        <p><a href="/contact" rel="nofollow">Contact Team Vriddhi</a> · <a href="aboutus.html">About Team Vriddhi</a></p>
-      </aside>
-    </main>
+    <hr />
 
-    <footer role="contentinfo">
-      <p>© <span id="year">2025</span> Team Vriddhi — NPS Jayanagar, Bengaluru · <a href="/privacy">Privacy</a></p>
-    </footer>
-  </div>
+    <!-- Overview -->
+    <section class="section">
+      <h4 class="fw-semibold">Overview</h4>
+      <p>
+        India's art forms are diverse, regionally rooted, and full of stories, techniques, and values. 
+        In the game, players encounter challenges inspired by dance, music, crafts, theatre, and folk traditions. 
+        Each encounter aims to teach cultural context while encouraging strategic thinking and teamwork.
+      </p>
+    </section>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+    <!-- Types of Art Forms -->
+    <section class="section">
+      <h4 class="fw-semibold">Types of art forms (click to explore)</h4>
+
+      <div class="art-card">
+        <h5>1. Mandala</h5>
+        <p>
+          Mandala art is a symbolic circular design that originated in Hindu and Buddhist traditions 
+          to represent the universe's wholeness and interconnectedness. The term “mandala” means “circle” in Sanskrit. 
+          These artworks typically feature intricate geometric patterns radiating from a central point and were traditionally 
+          used for meditation and sacred rituals. Creating mandalas is popular today for its meditative and therapeutic benefits, 
+          promoting focus, mindfulness, and relaxation.
+        </p>
+      </div>
+
+      <div class="art-card">
+        <h5>2. Madhubani (Mithila)</h5>
+        <p>
+          A folk art tradition from Bihar’s Mithila region, characterized by intricate line work and vibrant fills. 
+          Traditionally painted on mud walls and floors, it is now created on paper, cloth, and canvas using fingers, twigs, 
+          brushes, and nib pens. Themes span mythology, nature, and daily life, featuring motifs like deities, animals, flowers, 
+          and geometric patterns, often coloured with natural dyes derived from turmeric, henna, and charcoal.
+        </p>
+      </div>
+
+      <div class="art-card">
+        <h5>3. Gond</h5>
+        <p>
+          A tribal art form from the Gond community of Central India known for its intricate patterns of dots and lines, 
+          vibrant colours and imaginative depictions of nature, mythology, and folklore. Traditionally it was created on mud walls 
+          using natural materials like charcoal, clay and plant pigments. Modern Gond art is still created with these traditional methods 
+          and natural colors but is also frequently produced on paper and canvas using acrylic paints.
+        </p>
+      </div>
+
+      <div class="art-card">
+        <h5>4. Kalamkari</h5>
+        <p>
+          An ancient Indian textile art from Andhra Pradesh that involves handpainting or block printing intricate designs 
+          on cotton or silk fabric using natural dyes. The name comes from the Persian words <em>kalam</em> (pen) and <em>kari</em> (craftsmanship), 
+          referencing the use of a tamarind pen for freehand drawing.
+        </p>
+      </div>
+
+      <div class="art-card">
+        <h5>5. Pichwai</h5>
+        <p>
+          A traditional art form from Rajasthan consisting of intricate cloth paintings that traditionally served as backdrops 
+          for the idol of Srinathji, a form of Lord Krishna. The word <em>Pichwai</em> comes from <em>Pich</em> (back) and <em>Wai</em> (hanging). 
+          The art features vibrant colors and detailed depictions of scenes from Lord Krishna’s life, often with Gopis, Cows, and Lotuses.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contribute -->
+    <section class="section">
+      <div class="involvement-box">
+        <h5 class="fw-semibold">Contribute & Suggest</h5>
+        <p class="mb-0">
+          If you have references, photos, audio clips, or local stories to include, please share them with Team Vriddhi. 
+          Contributions help keep the game authentic and diverse.
+        </p>
+      </div>
+    </section>
+
+    <!-- About Team -->
+    <section class="section">
+      <h5 class="fw-semibold">About Team Vriddhi</h5>
+      <p>
+        Team Vriddhi comprises Class-7 students from NPS Jayanagar who worked collaboratively to research, document, 
+        and showcase India’s artistic and cultural diversity through interactive, educational gameplay.
+      </p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p class="mb-0">© Team Vriddhi, NPS Jayanagar, 2025</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
